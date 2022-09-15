@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    }
+    
+    .container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .card {
+        width: 900px;
+        height: 750px;
+        background: linear-gradient(121.52deg, #5D7F9E 0%, #003566 77.49%);
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .logo {
+        width: 130px;
+    }
+    
+    .logo .logoImg {
+        width: 100%;
+    }
+    
+    .cardHead {
+        width: 90%;
+        margin: 30px auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .cardHead .title {
+        color: white;
+        font-weight: 500;
+        font-size: 22px;
+    }
+    
+    .cardBody {
+        width: 90%;
+        margin: 20px auto;
+        color: white;
+    }
+
+    .blockText{
+        font-weight: 0;
+        line-height: 22px;
+
+    }
+    
+    .cardBody .subTitle {
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    .lastText{
+        font-size: 14px;
+    }
+    
+    .cardBody .text {
+        font-family: 400;
+        font-size: 14px;
+        margin: 16px 0;
+        width: 90%;
+        font-weight: 200;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+    }
+
+   .cardFooter {
+        width: 100%;
+    }
+
+    
+    .highlight{
+        color: #D1E9FF;
+        font-size: 15px;
+        margin: 0px 4px; 
+        line-height: 24px;
+        font-weight: 300 !important;
+    }
+
+    .highlight a{
+        color: #D1E9FF;
+    }
+
+    .cardFooter .bgCirc {
+        width: 800px;
+        height: 900px;
+        border-radius: 50%;
+        background-color: #D1E9FF;
+        border: 8px solid #809AB3;
+        right: -315px;
+        top: 520px;
+        position: absolute;
+    }
+    
+    .bgCirc .bigCircContent {
+        width: 45%;
+        text-align: right;
+        margin-top: 115px;
+        margin-left: 90px;
+      
+    }
+    
+    
+    .social a img {
+        width: 28px;
+        margin-top: 10px;
+    }
+    
+    .address {
+        color: #809AB3;
+        font-size: 15px;
+        font-weight: 200;
+        width: 90%;
+        margin-top: 10px;
+        margin-left: 35px;
+    }
+    .lastText{
+        margin-top: 50px !important;   
+    }
+
+    .flightDetails{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+
+    .planeDetails{
+        flex-basis: 25%;
+        display: flex;
+        gap: 10px;
+
+    }
+    .planeDetails .logo {
+        width: 70px;
+    }
+    .planeDetails .logo img{
+        width: 70px;
+    }
+    .minTitle{
+        font-weight: 100 !important;
+        font-size: 18px;
+        color: #D1E9FF;
+    }
+    .subMinTitle{
+        font-weight: 100 !important;
+        font-size: 14px;
+        color: #C7C7C7;
+    }
+    .transit{
+        flex-basis: 35%;
+        display: flex;
+        justify-content: center;        
+    }
+    .transitImage{
+        width: 200px
+    }
+    .transitTime{
+        font-size: 14px;
+        text-align: center;
+    }
+    .stops{
+        /* display: flex;
+        justify-content: center; */
+        position: relative; 
+        font-size: 14px; 
+    }
+    .seg21{
+        position: absolute;
+        left: 28%;
+    }
+    .seg22{
+        position: absolute;
+        left: 68%;
+    }
+    .seg11{
+        position: absolute;
+        left: 46%;
+    }
+
+    .secTitle{
+        margin-top: 20px;
+        font-size: 18px;
+    }
+    .passenger{
+        line-height: 25px;
+        margin-left: 5px;
+    }
+    .price{
+        margin-top: 70px;
+        font-weight: 100;
+    }
+    .btn{
+        margin-top: 20px;
+        padding: 10px 18px;
+    }
+    .btn a{
+        text-decoration: none;
+        color: #003566;
+        font-weight: 600;
+        font-size: 17px;
+    }
+</style>
+
+<body>
+    <div class="container">
+
+        <div class="card">
+            
+            <div class="cardHead">
+                <h2 class="title">Booking Confirmed</h1>
+                    <div class="logo">
+                        <a href="https://www.flyfarint.com/"><img class="logoImg" src="./img/All logo-05.png" alt=""></a> 
+                    </div>
+            </div>
+
+            <div class="cardBody">
+                <h4 class="subTitle">Dear Fly Far Trips , </h4>
+                <p class="text">Your Satff Mr. hyper Kahdemul Booked, Dhaka to Dubai Air Ticket which has been Confirmed. Thank you for Booking with Fly Far International. </p>
+
+                <p class="highlight">Booking ID  <a href="http://">FFIB 485184154564</a></p>
+
+                <div class="flightDetails">
+                    <div class="planeDetails">
+                        <div class="logo"><img src="./img/plane.png" alt=""></div>
+                        <div class="name">
+                            <h3 class="minTitle">Fly Emirates</h3>
+                            <h5 class="subMinTitle">EMA380</h5>
+                        </div>
+                    </div>
+                    <div class="depaturetransit">
+                        <h3  class="minTitle">Dhaka, BD</h3>
+                        <h5 class="subMinTitle">Sun 03 Jul 2022</h5>
+                    </div>
+                    <div class="transit"></div>
+                    <div class="arrivalTransit">
+                        <h3  class="minTitle">Istanbul, TK</h3>
+                        <h5 class="subMinTitle">Sun 03 Jul 2022</h5>
+                    </div>
+                </div>
+
+                <div class="travellersInfo">
+                    <div class="travellers">
+                        <h3 class="highlight secTitle">Travellers</h3>
+                        <p class="passenger">Mr. Kahdemul Molla</p>
+                        <p class="passenger">Mrs. Kahdemul Molla</p>
+                    </div>
+                    <div class="cabin">
+                        <h3 class="highlight secTitle">Cabin Class</h3>
+                        <p class="passenger">Economy</p>
+                    </div>
+
+                    <h1 class="price">Total Fare : 50,000 BDT</h1>
+
+                    <button class="btn"><a href="http://">View Your Booking</a></button>
+
+                </div>
+            </div>
+
+            <div class="cardFooter">
+                <div class="bgCirc">
+                    <div class="bigCircContent">
+
+                        <div class=" social ">
+                            <a href="https://www.facebook.com/FlyFarInternational/ "><img src="./img/fb.png " alt=" "></a>
+                            <a href="http:// "><img src="./img/lin.png " alt=" "></a>
+                            <a href="http:// "><img src="./img/wapp.png " alt=" "></a>
+                        </div>
+
+                        <div class="address">
+                            <h5>Ka 11/2A, Bashundhora R/A Road, Jagannathpur, Dhaka 1229.</h5>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+        let segment = 2;
+        let html;
+        let transit = document.querySelector('.transit')
+        if(segment === 2){
+            html = `
+            <p class="transitTime">31:25 Hrs | 2 Stops</p>
+            <img class= "transitImage" src="./img/2.png" alt=" ">
+            <div class="stops">
+                <p class="seg21">DXB</p>
+                <p class="seg22">JFK</p>
+            </div>    `
+        }
+        else if(segment === 1){
+            html = `
+            <p class="transitTime">31:25 Hrs | 1 Stops</p>
+            <img class= "transitImage" src="./img/1.png" alt=" ">
+            <div class="stops">
+                <p class="seg11">DXB</p>
+            </div>    `
+        }
+        else if(segment === 0){
+            html = `
+            <p class="transitTime">31:25 Hrs | Non Stops</p>
+            <img class= "transitImage" src="./img/0.png" alt=" ">  `
+        }else{
+            html = "no data"
+        }
+
+            // let html = `<img class= "transitImage"  src="./img/${segment}.png " alt=" ">  `
+            let text = document.createElement("div");
+            text.innerHTML = html
+            transit.appendChild(text)
+    </script>
+</body>
+
+
+
+</html>

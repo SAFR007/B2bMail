@@ -9,11 +9,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <style>
-    @import url('https://fonts.googleapis.com/css2?&family=Poppins:wght@400;500&display=swap');
-    * {
+      * {
         margin: 0;
         padding: 0;
-        font-family: 'Poppins', sans-serif;
+        font-family: sans-serif;
     }
     
     .container {
@@ -25,10 +24,11 @@
     }
     
     .card {
-        width: 800px;
-        height: 500px;
+        width: 900px;
+        height: 550px;
         background: linear-gradient(121.52deg, #5D7F9E 0%, #003566 77.49%);
         overflow: hidden;
+        position: relative;
     }
     
     .logo {
@@ -57,55 +57,69 @@
         margin: 20px auto;
         color: white;
     }
+
+    .blockText{
+        font-weight: 0;
+        line-height: 22px;
+        color: ;
+
+    }
     
     .cardBody .subTitle {
         font-weight: 500;
         margin-bottom: 20px;
     }
+
+    .lastText{
+        font-size: 14px;
+    }
     
     .cardBody .text {
         font-family: 400;
         font-size: 14px;
-        margin: 10px 0;
-        width: 80%;
+        margin: 16px 0;
+        width: 90%;
         font-weight: 200;
+        line-height: 24px;
+        letter-spacing: 0.2px;
     }
+
+   .cardFooter {
+        width: 100%;
+    }
+
     
-    .text a {
+    .highlight{
         color: #D1E9FF;
         font-size: 15px;
-        margin: 0px 4px;
+        margin: 0px 4px; 
+        line-height: 24px;
+        font-weight: 300 !important;
     }
-    
-    .cardFooter {
-        width: 100%;
-        position: relative;
+
+    .highlight a{
+        color: #D1E9FF;
     }
-    
+
     .cardFooter .bgCirc {
         width: 800px;
         height: 900px;
         border-radius: 50%;
         background-color: #D1E9FF;
         border: 8px solid #809AB3;
-        left: 300px;
-        top: -30px;
+        right: -315px;
+        top: 315px;
         position: absolute;
     }
     
     .bgCirc .bigCircContent {
         width: 45%;
         text-align: right;
-        margin-top: 50px;
+        margin-top: 115px;
         margin-left: 90px;
+      
     }
     
-    .contact ul {
-        list-style: none;
-        font-size: 13px;
-        font-weight: 600;
-        color: #265582;
-    }
     
     .social a img {
         width: 28px;
@@ -120,38 +134,36 @@
         margin-top: 10px;
         margin-left: 35px;
     }
+    .lastText{
+        margin-top: 50px !important;   
+    }
 </style>
 
 <body>
     <div class="container">
+
         <div class="card">
             <div class="cardHead">
-                <h2 class="title">Reset Your Password</h1>
+                <h2 class="title">Booking Cancelation Reminder </h1>
                     <div class="logo">
-                        <img class="logoImg" src="httpss://cdn.flyfarint.com/logo.png" alt="">
+                        <a href="https://www.flyfarint.com/"><img class="logoImg" src="./img/All logo-05.png" alt=""></a> 
                     </div>
             </div>
 
             <div class="cardBody">
-                <h4 class="subTitle">Dear Fly Far Trips</h4>
-                <p class="text">We saw you recently requested a new password. We are here to help !</p>
+                <h4 class="subTitle">Dear Fly Far Trips , </h4>
+                <p class="text">Your Dhaka to Dubai Air Ticket  <a href="" class="highlight">FFIB 485184154564</a>  will expire in 1 Hours.  Kindly order the ticket before the given ticketing time limit over.</p>
 
-                <p class="text">Please <a href="http://">click</a> here to reset your Fly far Interntional account. Link valid for 180 minutes</p>
+                <p class="text">The itinearies will bw cancelled autimatically once the booking time limit is over.</p>
 
-                <p class="text">If you didn’t make yhis request then let us know immediately. we make your security seriously</p>
+                <p class="text lastText">If you have any further questions or query, kindly mail us at <span class="highlight">support@flyfarint.com</span> <br> agency or call us at <span class="highlight">09606912912</span> </p>
+
             </div>
 
             <div class="cardFooter">
                 <div class="bgCirc">
                     <div class="bigCircContent">
-                        <div class="contact">
-                            <ul>
-                                <li>Phone: 09606912912</li>
-                                <li>Website: www.flywayint.com</li>
-                                <li>Email: support@flyfarint.com</li>
-                            </ul>
 
-                        </div>
                         <div class=" social ">
                             <a href="https://www.facebook.com/FlyFarInternational/ "><img src="./img/fb.png " alt=" "></a>
                             <a href="http:// "><img src="./img/lin.png " alt=" "></a>
@@ -161,14 +173,9 @@
                         <div class="address">
                             <h5>Ka 11/2A, Bashundhora R/A Road, Jagannathpur, Dhaka 1229.</h5>
                         </div>
-
                     </div>
-
-
                 </div>
             </div>
-
-
         </div>
     </div>
 </body>
